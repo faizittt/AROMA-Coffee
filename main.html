@@ -11,9 +11,35 @@
         <div class="container header__inner">
             <a class="logo" href="main.html">AROMA</a>
             <nav class="nav">
-                <a class="nav__link" href="#">Меню</a>
-                <a class="nav__link" href="about.html">О нас</a>
-                <a class="nav__link" href="#">Контакты</a>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="main.html">Главная</a>
+                    </li>
+
+                    <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown" href="#menu">Меню</a>
+                        <ul class="nav__submenu">
+                            <li class="nav__subitem">
+                                <a class="nav__sublink" href="#">Напитки</a>
+                            </li>
+                            <li class="nav__subitem">
+                                <a class="nav__sublink" href="#">Десерты</a>
+                            </li>
+                            <li class="nav__subitem">
+                                <a class="nav__sublink" href="#">Горячие блюда</a>
+                            </li>
+                            <li class="nav__subitem">
+                                <a class="nav__sublink" href="#">Холодные блюда</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#contact">Контакты</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="about.html">О нас</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -116,6 +142,51 @@
                 </article>
             </div>
         </div> 
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Cвязь с нами</h2>
+
+            <div class="contact__layout">
+
+                <div class="contact__info">
+                    <p class="contact__line"><strong>Адрес:</strong>ул.Примерная,10</p>
+                    <p class="contact__line"><strong>Телефон:</strong>+7 (123) 456 78 90</p>
+                    <p class="contact__line"><strong>Время работы:</strong>08:00-22:00</p>
+                </div>
+                <div class="contact__form">
+                    <form class="form" action="#" method="post">
+                        <div class="form__row">
+                            <label class="form__label" for="name">Имя</label>
+                            <input 
+                            class="form__input" 
+                            type="text"
+                            id="name"
+                            placeholder="Например: Арсений"
+                            required
+                            minlength="2"
+                            maxlength="30"
+                            autocomplete="given-name"/>
+                            <small class="form__hint">Минимум 2 символя</small>
+                        </div>
+
+                        <div class="form__row">
+                            <label class="form__label" for="phone">Телефон</label>
+                            <input 
+                            class="form__input" 
+                            type="tel"
+                            id="phone"
+                            placeholder="+7 (123) 456 78 90"
+                            required
+                            autocomplete="tel"
+                            pattern="\+?[0-9\s\-\(\)]{10,}$"/>
+                            <small class="form__hint">Минимум 2 символя</small>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </section>
 
     </main>

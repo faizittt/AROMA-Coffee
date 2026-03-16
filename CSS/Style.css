@@ -446,3 +446,72 @@ a{
 .product-card__btn:hover{
     background-color: var(--primary);
 }
+
+.nav{
+    display: block;
+}
+
+.nav__list{
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.nav__item{
+    position: relative;
+}
+
+.nav__link{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.nav__link:hover{
+    background: var(--surface);
+}
+
+.nav__submenu{
+    list-style: none;
+    position: absolute;
+    top: calc(100%+8px);
+    left: 0;
+    min-width: 180px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px;
+    box-shadow: 9px 32px 25px -10px rgba(0, 0, 0, 0.31);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-6px);
+    pointer-events: none;
+    transition: 0.5s;
+    z-index: 100;
+}
+
+.nav__item--dropdown:hover .nav__submenu,
+.nav__item--dropdown:focus-within .nav__submenu{
+       opacity: 1;
+       visibility: visible;
+       transform: translateY(0);
+       pointer-events: auto;
+}
+
+.nav__sublink{
+    display: block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: var(--text);
+}
+
+.nav__sublink:hover{
+    background: var(--surface);
+}
+
+.nav__link--dropdown::after{
+    content: "▼";
+    font-size: 12px;
+    color: var(--muted);
+}
