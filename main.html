@@ -181,8 +181,43 @@
                             required
                             autocomplete="tel"
                             pattern="\+?[0-9\s\-\(\)]{10,}$"/>
-                            <small class="form__hint">Минимум 2 символя</small>
+                            <small class="form__hint">Можно с пробелами и скобками</small>
                         </div>
+
+                        <div class="form__row form__row--two">
+                            <div class="form__col">
+                            <label class="form__label" for="date">Дата</label>
+                            <input 
+                            class="form__input" 
+                            type="date"
+                            id="date"
+                            required
+                            />
+                        </div>
+
+                        <div class="form__col">
+                            <label class="form__label" for="time">Время</label>
+                            <input 
+                            class="form__input" 
+                            type="time"
+                            id="time"
+                            required
+                            />
+                        </div>
+                            </div>
+
+                            <div class="form__row">
+                            <label class="form__label" for="text">Коментарий</label>
+                            <textarea   class="form__textaria" 
+                                        name="comment"
+                                        id="comment"
+                                        placeholder="Например:Столик у окна 2 человека"
+                                        row="4"
+                                        minlength="200"
+                                        ></textarea>
+                                        <small class="form__hint">До 200 символов</small>
+                        </div>      
+                        <button class="form__submit" type="submit">Отправить заявку</button>
                     </form>
                 </div>
             </div>
@@ -190,7 +225,7 @@
     </section>
 
     </main>
-    <footer class="footer" id="contact">
+    <footer class="footer">
         <div class="container footer__inner">
             <p class="footer_text">® 2026 Кофейня AROMA</p>
             <p class="footer_link">Политика конфиденциальности</p>
