@@ -51,7 +51,7 @@
                     <p class="hero__subtitle">
                         Свежая обжарка, уютная атмосфера и десерты,которые идеально подходят к капучино.
                     </p>
-                    <a class="btn" href="#">Забронировать столик</a>
+                    <a class="btn" href="#contact">Забронировать столик</a>
                 </div>
                 <div class="hero__media">
                     <div class="hero__placeholder">Фото</div>
@@ -213,7 +213,7 @@
                                         id="comment"
                                         placeholder="Например:Столик у окна 2 человека"
                                         row="4"
-                                        minlength="200"
+                                        maxlength="200"
                                         ></textarea>
                                         <small class="form__hint">До 200 символов</small>
                         </div>      
@@ -225,11 +225,26 @@
     </section>
 
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container footer__inner">
-            <p class="footer_text">® 2026 Кофейня AROMA</p>
-            <p class="footer_link">Политика конфиденциальности</p>
-        </div>
+            <div class="footer__brand">
+                <p class="footer__logo">AROMA</p>
+                <p class="footer__text">© 2026.Все права защищены.</p>
+            </div>
+
+            <div class="footer__links">
+                <p class="footer__title">Разделы</p>
+                <a class="footer__link" href="#">Меню</a>
+                <a class="footer__link" href="#">Контакты</a>
+                <a class="footer__link" href="#">О нас</a>
+            </div>
+
+            <div class="footer__right">
+                <a class="footer__link" href="#">Политику конфиденциальности</a>
+                <a class="footer__top" href="#">Наверх</a>
+            </div>
+
+        </div> 
     </footer>
 </body>
 </html>
